@@ -663,6 +663,234 @@ class InvoicePdf extends StatelessWidget {
                                     ),
                                   )),
                             ])))
+                  ])),
+              pw.Container(
+                  height: 80,
+                  child: pw.Row(children: [
+                    pw.Expanded(
+                        child: pw.Container(
+                            decoration: pw.BoxDecoration(
+                              border: pw.Border.all(width: 0.5),
+                            ),
+                            child: pw.Column(children: [
+                              pw.Expanded(
+                                  flex: 5,
+                                  child: pw.Container(
+                                      decoration: pw.BoxDecoration(
+                                        border: pw.Border.all(width: 0.5),
+                                      ),
+                                      child: pw.Row(children: [
+                                        pw.Expanded(
+                                            flex: 3,
+                                            child: pw.Container(
+                                              decoration: pw.BoxDecoration(
+                                                border:
+                                                    pw.Border.all(width: 0.5),
+                                              ),
+                                            )),
+                                        pw.Expanded(
+                                            flex: 1,
+                                            child: pw.Container(
+                                                decoration: pw.BoxDecoration(
+                                                  border:
+                                                      pw.Border.all(width: 0.5),
+                                                ),
+                                                child: pw.Column(children: [
+                                                  pw.Expanded(
+                                                      child: pw.Container(
+                                                          decoration:
+                                                              pw.BoxDecoration(
+                                                            border:
+                                                                pw.Border.all(
+                                                                    width: 0.5),
+                                                          ),
+                                                          child: pw.Padding(
+                                                              padding: const pw
+                                                                      .EdgeInsets.all(
+                                                                  2),
+                                                              child: pw.Text(
+                                                                  'SHIPPERS REFERENCE',
+                                                                  style: const pw
+                                                                          .TextStyle(
+                                                                      fontSize:
+                                                                          7))))),
+                                                  pw.Expanded(
+                                                      child: pw.Container(
+                                                          alignment: pw
+                                                              .Alignment
+                                                              .topLeft,
+                                                          decoration:
+                                                              pw.BoxDecoration(
+                                                            border:
+                                                                pw.Border.all(
+                                                                    width: 0.5),
+                                                          ),
+                                                          child: pw.Padding(
+                                                              padding: const pw
+                                                                      .EdgeInsets.all(
+                                                                  2),
+                                                              child: pw.Text(
+                                                                  'DATE',
+                                                                  style: const pw
+                                                                          .TextStyle(
+                                                                      fontSize:
+                                                                          7))))),
+                                                ]))),
+                                      ]))),
+                              pw.Expanded(
+                                  flex: 2,
+                                  child: pw.Container(
+                                      decoration: pw.BoxDecoration(
+                                        border: pw.Border.all(width: 0.5),
+                                      ),
+                                      child: pw.Row(children: [
+                                        pw.Expanded(
+                                            flex: 3,
+                                            child: pw.Container(
+                                                alignment: pw.Alignment.topLeft,
+                                                decoration: pw.BoxDecoration(
+                                                  border:
+                                                      pw.Border.all(width: 0.5),
+                                                ),
+                                                child: pw.Padding(
+                                                    padding:
+                                                        const pw.EdgeInsets.all(
+                                                            2),
+                                                    child: pw.Text(
+                                                        'For COURIERS',
+                                                        style:
+                                                            const pw.TextStyle(
+                                                                fontSize:
+                                                                    7))))),
+                                        pw.Expanded(
+                                            flex: 1,
+                                            child: pw.Container(
+                                                decoration: pw.BoxDecoration(
+                                                  border:
+                                                      pw.Border.all(width: 0.5),
+                                                ),
+                                                child: pw.Column(children: [
+                                                  pw.Expanded(
+                                                      child: pw.Container(
+                                                          alignment: pw
+                                                              .Alignment
+                                                              .topLeft,
+                                                          decoration:
+                                                              pw.BoxDecoration(
+                                                            border:
+                                                                pw.Border.all(
+                                                                    width: 0.5),
+                                                          ),
+                                                          child: pw.Padding(
+                                                              padding: const pw
+                                                                      .EdgeInsets.all(
+                                                                  2),
+                                                              child: pw.Text(
+                                                                  'TIME',
+                                                                  style: const pw
+                                                                          .TextStyle(
+                                                                      fontSize:
+                                                                          7))))),
+                                                  pw.Expanded(
+                                                      child: pw.Container(
+                                                          alignment: pw
+                                                              .Alignment
+                                                              .topLeft,
+                                                          decoration:
+                                                              pw.BoxDecoration(
+                                                            border:
+                                                                pw.Border.all(
+                                                                    width: 0.5),
+                                                          ),
+                                                          child: pw.Padding(
+                                                              padding: const pw
+                                                                      .EdgeInsets.all(
+                                                                  2),
+                                                              child: pw.Text(
+                                                                  'DATE',
+                                                                  style: const pw
+                                                                          .TextStyle(
+                                                                      fontSize:
+                                                                          7))))),
+                                                ]))),
+                                      ]))),
+                            ]))),
+                    pw.Expanded(
+                        child: pw.Container(
+                            decoration: pw.BoxDecoration(
+                              border: pw.Border.all(width: 0.5),
+                            ),
+                            child: pw.Row(children: [
+                              pw.Expanded(
+                                  flex: 1,
+                                  child: pw.Container(
+                                      decoration: pw.BoxDecoration(
+                                          border: pw.Border.all(width: 0.5),
+                                          color: PdfColors.black),
+                                      child: pw.Column(
+                                          mainAxisAlignment:
+                                              pw.MainAxisAlignment.spaceAround,
+                                          children: [
+                                            pw.Text('P',
+                                                style: pw.TextStyle(
+                                                    fontWeight:
+                                                        pw.FontWeight.bold,
+                                                    fontSize: 20,
+                                                    color: PdfColors.white)),
+                                            pw.Text('O',
+                                                style: pw.TextStyle(
+                                                    fontWeight:
+                                                        pw.FontWeight.bold,
+                                                    fontSize: 20,
+                                                    color: PdfColors.white)),
+                                            pw.Text('D',
+                                                style: pw.TextStyle(
+                                                    fontWeight:
+                                                        pw.FontWeight.bold,
+                                                    fontSize: 20,
+                                                    color: PdfColors.white))
+                                          ]))),
+                              pw.Expanded(
+                                  flex: 7,
+                                  child: pw.Container(
+                                      decoration: pw.BoxDecoration(
+                                        border: pw.Border.all(width: 0.5),
+                                      ),
+                                      child: pw.Column(children: [
+                                        pw.Expanded(
+                                            flex: 3,
+                                            child: pw.Container(
+                                              decoration: pw.BoxDecoration(
+                                                border:
+                                                    pw.Border.all(width: 0.5),
+                                              ),
+                                            )),
+                                        pw.Expanded(
+                                            flex: 3,
+                                            child: pw.Container(
+                                              decoration: pw.BoxDecoration(
+                                                border:
+                                                    pw.Border.all(width: 0.5),
+                                              ),
+                                            )),
+                                        pw.Expanded(
+                                            flex: 1,
+                                            child: pw.Container(
+                                              decoration: pw.BoxDecoration(
+                                                border:
+                                                    pw.Border.all(width: 0.5),
+                                              ),
+                                            )),
+                                        pw.Expanded(
+                                            flex: 1,
+                                            child: pw.Container(
+                                              decoration: pw.BoxDecoration(
+                                                border:
+                                                    pw.Border.all(width: 0.5),
+                                              ),
+                                            )),
+                                      ]))),
+                            ]))),
                   ]))
             ])),
             pw.Container(),
