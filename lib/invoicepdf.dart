@@ -949,42 +949,348 @@ class InvoicePdf extends StatelessWidget {
                   pw.Expanded(
                       flex: 1,
                       child: pw.Container(
-                        alignment: pw.Alignment.topCenter,
-                        decoration: pw.BoxDecoration(
-                          border: pw.Border.all(width: 0.5),
-                        ),
-                      )),
+                          alignment: pw.Alignment.topCenter,
+                          decoration: pw.BoxDecoration(
+                            border: pw.Border.all(width: 0.5),
+                          ),
+                          child: pw.Row(children: [
+                            pw.Expanded(
+                                flex: 1,
+                                child: pw.Container(
+                                    alignment: pw.Alignment.topCenter,
+                                    decoration: pw.BoxDecoration(
+                                      border: pw.Border.all(width: 0.5),
+                                    ),
+                                    child: pw.Center(
+                                        child: pw.Text('Pre-Carriage by',
+                                            style: const pw.TextStyle(
+                                                fontSize: 7))))),
+                            pw.Expanded(
+                                flex: 1,
+                                child: pw.Container(
+                                    alignment: pw.Alignment.topCenter,
+                                    decoration: pw.BoxDecoration(
+                                      border: pw.Border.all(width: 0.5),
+                                    ),
+                                    child: pw.Center(
+                                        child: pw.Text(
+                                            'Place of Receipt by Pre-carrier',
+                                            style: const pw.TextStyle(
+                                                fontSize: 7))))),
+                            pw.Expanded(
+                                flex: 2,
+                                child: pw.Container(
+                                    alignment: pw.Alignment.topCenter,
+                                    decoration: pw.BoxDecoration(
+                                      border: pw.Border.all(width: 0.5),
+                                    ),
+                                    child: pw.Center(
+                                        child: pw.Text(
+                                            'Terms of Delivery and Payment',
+                                            style: const pw.TextStyle(
+                                                fontSize: 7))))),
+                          ]))),
                   pw.Expanded(
                       flex: 4,
                       child: pw.Container(
-                        alignment: pw.Alignment.topCenter,
-                        decoration: pw.BoxDecoration(
-                          border: pw.Border.all(width: 0.5),
-                        ),
-                      )),
+                          alignment: pw.Alignment.topCenter,
+                          decoration: pw.BoxDecoration(
+                            border: pw.Border.all(width: 0.5),
+                          ),
+                          child: pw.Row(children: [
+                            pw.Expanded(
+                                child: pw.Container(
+                                    alignment: pw.Alignment.topCenter,
+                                    decoration: pw.BoxDecoration(
+                                      border: pw.Border.all(width: 0.5),
+                                    ),
+                                    child: pw.Column(children: [
+                                      pw.Expanded(
+                                          child: pw.Container(
+                                              alignment: pw.Alignment.topCenter,
+                                              decoration: pw.BoxDecoration(
+                                                border:
+                                                    pw.Border.all(width: 0.5),
+                                              ),
+                                              child: pw.Row(children: [
+                                                pw.Expanded(
+                                                    child: pw.Container(
+                                                        alignment: pw
+                                                            .Alignment.topLeft,
+                                                        decoration:
+                                                            pw.BoxDecoration(
+                                                          border: pw.Border.all(
+                                                              width: 0.5),
+                                                        ),
+                                                        child: pw.Text(
+                                                            'Vessele/Flight No.',
+                                                            style: const pw
+                                                                    .TextStyle(
+                                                                fontSize: 7)))),
+                                                pw.Expanded(
+                                                    child: pw.Container(
+                                                        alignment: pw
+                                                            .Alignment.topLeft,
+                                                        decoration:
+                                                            pw.BoxDecoration(
+                                                          border: pw.Border.all(
+                                                              width: 0.5),
+                                                        ),
+                                                        child: pw.Text(
+                                                            'Port of Loading',
+                                                            style: const pw
+                                                                    .TextStyle(
+                                                                fontSize: 7)))),
+                                              ]))),
+                                      pw.Expanded(
+                                          child: pw.Container(
+                                              alignment: pw.Alignment.topCenter,
+                                              decoration: pw.BoxDecoration(
+                                                border:
+                                                    pw.Border.all(width: 0.5),
+                                              ),
+                                              child: pw.Row(children: [
+                                                pw.Expanded(
+                                                    child: pw.Container(
+                                                        alignment: pw
+                                                            .Alignment.topLeft,
+                                                        decoration:
+                                                            pw.BoxDecoration(
+                                                          border: pw.Border.all(
+                                                              width: 0.5),
+                                                        ),
+                                                        child: pw.Text(
+                                                            'Port of Discharge',
+                                                            style: const pw
+                                                                    .TextStyle(
+                                                                fontSize: 7)))),
+                                                pw.Expanded(
+                                                    child: pw.Container(
+                                                        alignment: pw
+                                                            .Alignment.topLeft,
+                                                        decoration:
+                                                            pw.BoxDecoration(
+                                                          border: pw.Border.all(
+                                                              width: 0.5),
+                                                        ),
+                                                        child: pw.Text(
+                                                            'Port of Discharge',
+                                                            style: const pw
+                                                                    .TextStyle(
+                                                                fontSize: 7)))),
+                                              ]))),
+                                    ]))),
+                            pw.Expanded(
+                                child: pw.Container(
+                              alignment: pw.Alignment.topCenter,
+                              decoration: pw.BoxDecoration(
+                                border: pw.Border.all(width: 0.5),
+                              ),
+                            )),
+                          ]))),
                   pw.Expanded(
                       flex: 2,
                       child: pw.Container(
-                        alignment: pw.Alignment.topCenter,
-                        decoration: pw.BoxDecoration(
-                          border: pw.Border.all(width: 0.5),
-                        ),
-                      )),
+                          alignment: pw.Alignment.topCenter,
+                          decoration: pw.BoxDecoration(
+                            border: pw.Border.all(width: 0.5),
+                          ),
+                          child: pw.Row(children: [
+                            pw.Expanded(
+                                flex: 4,
+                                child: pw.Container(
+                                    alignment: pw.Alignment.topCenter,
+                                    decoration: pw.BoxDecoration(
+                                      border: pw.Border.all(width: 0.5),
+                                    ),
+                                    child: pw.Text('Description',
+                                        style:
+                                            const pw.TextStyle(fontSize: 7)))),
+                            pw.Expanded(
+                                flex: 1,
+                                child: pw.Container(
+                                    alignment: pw.Alignment.topCenter,
+                                    decoration: pw.BoxDecoration(
+                                      border: pw.Border.all(width: 0.5),
+                                    ),
+                                    child: pw.Text('Quantity (PCS))',
+                                        style:
+                                            const pw.TextStyle(fontSize: 7)))),
+                            pw.Expanded(
+                                flex: 1,
+                                child: pw.Container(
+                                    alignment: pw.Alignment.topCenter,
+                                    decoration: pw.BoxDecoration(
+                                      border: pw.Border.all(width: 0.5),
+                                    ),
+                                    child: pw.Text('RATE (USD)',
+                                        style:
+                                            const pw.TextStyle(fontSize: 7)))),
+                            pw.Expanded(
+                                flex: 1,
+                                child: pw.Container(
+                                    alignment: pw.Alignment.topCenter,
+                                    decoration: pw.BoxDecoration(
+                                      border: pw.Border.all(width: 0.5),
+                                    ),
+                                    child: pw.Text('Amount (USD)',
+                                        style:
+                                            const pw.TextStyle(fontSize: 7)))),
+                            pw.Expanded(
+                                flex: 4,
+                                child: pw.Container(
+                                    alignment: pw.Alignment.topCenter,
+                                    decoration: pw.BoxDecoration(
+                                      border: pw.Border.all(width: 0.5),
+                                    ),
+                                    child: pw.Text('Description',
+                                        style:
+                                            const pw.TextStyle(fontSize: 7)))),
+                            pw.Expanded(
+                                flex: 1,
+                                child: pw.Container(
+                                    alignment: pw.Alignment.topCenter,
+                                    decoration: pw.BoxDecoration(
+                                      border: pw.Border.all(width: 0.5),
+                                    ),
+                                    child: pw.Text('Quantity (PCS)',
+                                        style:
+                                            const pw.TextStyle(fontSize: 7)))),
+                            pw.Expanded(
+                                flex: 1,
+                                child: pw.Container(
+                                    alignment: pw.Alignment.topCenter,
+                                    decoration: pw.BoxDecoration(
+                                      border: pw.Border.all(width: 0.5),
+                                    ),
+                                    child: pw.Text('PRATE (USD)',
+                                        style:
+                                            const pw.TextStyle(fontSize: 7)))),
+                            pw.Expanded(
+                                flex: 1,
+                                child: pw.Container(
+                                    alignment: pw.Alignment.topCenter,
+                                    decoration: pw.BoxDecoration(
+                                      border: pw.Border.all(width: 0.5),
+                                    ),
+                                    child: pw.Text('Amount (USD)',
+                                        style:
+                                            const pw.TextStyle(fontSize: 7)))),
+                          ]))),
                   pw.Expanded(
                       child: pw.Container(
-                    alignment: pw.Alignment.topCenter,
-                    decoration: pw.BoxDecoration(
-                      border: pw.Border.all(width: 0.5),
-                    ),
-                  )),
+                          alignment: pw.Alignment.topCenter,
+                          decoration: pw.BoxDecoration(
+                            border: pw.Border.all(width: 0.5),
+                          ),
+                          child: pw.Row(children: [
+                            pw.Expanded(
+                                flex: 4,
+                                child: pw.Container(
+                                  alignment: pw.Alignment.center,
+                                  decoration: pw.BoxDecoration(
+                                    border: pw.Border.all(width: 0.5),
+                                  ),
+                                )),
+                            pw.Expanded(
+                                flex: 1,
+                                child: pw.Container(
+                                  alignment: pw.Alignment.topCenter,
+                                  decoration: pw.BoxDecoration(
+                                    border: pw.Border.all(width: 0.5),
+                                  ),
+                                )),
+                            pw.Expanded(
+                                flex: 1,
+                                child: pw.Container(
+                                  alignment: pw.Alignment.topCenter,
+                                  decoration: pw.BoxDecoration(
+                                    border: pw.Border.all(width: 0.5),
+                                  ),
+                                )),
+                            pw.Expanded(
+                                flex: 8,
+                                child: pw.Container(
+                                  alignment: pw.Alignment.topCenter,
+                                  decoration: pw.BoxDecoration(
+                                    border: pw.Border.all(width: 0.5),
+                                  ),
+                                )),
+                          ]))),
                   pw.Expanded(
                       flex: 1,
                       child: pw.Container(
-                        alignment: pw.Alignment.topCenter,
-                        decoration: pw.BoxDecoration(
-                          border: pw.Border.all(width: 0.5),
-                        ),
-                      )),
+                          alignment: pw.Alignment.topCenter,
+                          decoration: pw.BoxDecoration(
+                            border: pw.Border.all(width: 0.5),
+                          ),
+                          child: pw.Row(children: [
+                            pw.Expanded(
+                                flex: 4,
+                                child: pw.Container(
+                                    alignment: pw.Alignment.topCenter,
+                                    decoration: pw.BoxDecoration(
+                                      border: pw.Border.all(width: 0.5),
+                                    ),
+                                    child: pw.Center(
+                                        child: pw.Text('NUMBER OF PCS',
+                                            style: const pw.TextStyle(
+                                                fontSize: 7))))),
+                            pw.Expanded(
+                                flex: 4,
+                                child: pw.Container(
+                                  alignment: pw.Alignment.topCenter,
+                                  decoration: pw.BoxDecoration(
+                                    border: pw.Border.all(width: 0.5),
+                                  ),
+                                )),
+                            pw.Expanded(
+                                flex: 4,
+                                child: pw.Container(
+                                    alignment: pw.Alignment.topCenter,
+                                    decoration: pw.BoxDecoration(
+                                      border: pw.Border.all(width: 0.5),
+                                    ),
+                                    child: pw.Center(
+                                        child: pw.Text('TOTAL WEIGHTS',
+                                            style: const pw.TextStyle(
+                                                fontSize: 7))))),
+                            pw.Expanded(
+                                flex: 2,
+                                child: pw.Container(
+                                  alignment: pw.Alignment.topCenter,
+                                  decoration: pw.BoxDecoration(
+                                    border: pw.Border.all(width: 0.5),
+                                  ),
+                                )),
+                            pw.Expanded(
+                                flex: 4,
+                                child: pw.Container(
+                                    alignment: pw.Alignment.topCenter,
+                                    decoration: pw.BoxDecoration(
+                                      border: pw.Border.all(width: 0.5),
+                                    ),
+                                    child: pw.Center(
+                                        child: pw.Text('TOTAL VALUES',
+                                            style: const pw.TextStyle(
+                                                fontSize: 7))))),
+                            pw.Expanded(
+                                flex: 2,
+                                child: pw.Container(
+                                  alignment: pw.Alignment.topCenter,
+                                  decoration: pw.BoxDecoration(
+                                    border: pw.Border.all(width: 0.5),
+                                  ),
+                                )),
+                            pw.Expanded(
+                                flex: 2,
+                                child: pw.Container(
+                                  alignment: pw.Alignment.topCenter,
+                                  decoration: pw.BoxDecoration(
+                                    border: pw.Border.all(width: 0.5),
+                                  ),
+                                )),
+                          ]))),
                 ])),
             pw.Container()
           ]));
