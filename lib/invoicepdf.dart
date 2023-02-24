@@ -1292,7 +1292,19 @@ class InvoicePdf extends StatelessWidget {
                                 )),
                           ]))),
                 ])),
-            pw.Container()
+            pw.Container(
+                child: pw.Column(children: [
+              pw.Align(
+                  alignment: pw.Alignment.topLeft,
+                  child: pw.Text('FREIGHT PREPAID',
+                      style: pw.TextStyle(
+                          fontWeight: pw.FontWeight.bold, fontSize: 10))),
+              pw.Align(
+                  alignment: pw.Alignment.topLeft,
+                  child: pw.Text('NOTE:',
+                      style: pw.TextStyle(
+                          fontWeight: pw.FontWeight.bold, fontSize: 10)))
+            ]))
           ]));
     }));
     return pdf.save();
