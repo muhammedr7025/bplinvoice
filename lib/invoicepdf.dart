@@ -860,35 +860,74 @@ class InvoicePdf extends StatelessWidget {
                                         pw.Expanded(
                                             flex: 3,
                                             child: pw.Container(
-                                              decoration: pw.BoxDecoration(
-                                                border:
-                                                    pw.Border.all(width: 0.5),
-                                              ),
-                                            )),
+                                                alignment: pw.Alignment.topLeft,
+                                                decoration: pw.BoxDecoration(
+                                                  border:
+                                                      pw.Border.all(width: 0.5),
+                                                ),
+                                                child: pw.Padding(
+                                                    padding:
+                                                        const pw.EdgeInsets.all(
+                                                            2),
+                                                    child: pw.Text(
+                                                        'I, the undersigned.on behalf of the above sender/shipper acknowledge the receipt of goods in good condition',
+                                                        style:
+                                                            const pw.TextStyle(
+                                                                fontSize:
+                                                                    7))))),
                                         pw.Expanded(
                                             flex: 3,
                                             child: pw.Container(
-                                              decoration: pw.BoxDecoration(
-                                                border:
-                                                    pw.Border.all(width: 0.5),
-                                              ),
-                                            )),
+                                                alignment: pw.Alignment.topLeft,
+                                                decoration: pw.BoxDecoration(
+                                                  border:
+                                                      pw.Border.all(width: 0.5),
+                                                ),
+                                                child: pw.Padding(
+                                                    padding:
+                                                        const pw.EdgeInsets.all(
+                                                            2),
+                                                    child: pw.Text(
+                                                        'Receivers Name',
+                                                        style:
+                                                            const pw.TextStyle(
+                                                                fontSize:
+                                                                    7))))),
                                         pw.Expanded(
                                             flex: 1,
                                             child: pw.Container(
-                                              decoration: pw.BoxDecoration(
-                                                border:
-                                                    pw.Border.all(width: 0.5),
-                                              ),
-                                            )),
+                                                alignment: pw.Alignment.topLeft,
+                                                decoration: pw.BoxDecoration(
+                                                  border:
+                                                      pw.Border.all(width: 0.5),
+                                                ),
+                                                child: pw.Padding(
+                                                    padding:
+                                                        const pw.EdgeInsets.all(
+                                                            2),
+                                                    child: pw.Text(
+                                                        'Date & Time',
+                                                        style:
+                                                            const pw.TextStyle(
+                                                                fontSize:
+                                                                    7))))),
                                         pw.Expanded(
                                             flex: 1,
                                             child: pw.Container(
-                                              decoration: pw.BoxDecoration(
-                                                border:
-                                                    pw.Border.all(width: 0.5),
-                                              ),
-                                            )),
+                                                alignment: pw.Alignment.topLeft,
+                                                decoration: pw.BoxDecoration(
+                                                  border:
+                                                      pw.Border.all(width: 0.5),
+                                                ),
+                                                child: pw.Padding(
+                                                    padding:
+                                                        const pw.EdgeInsets.all(
+                                                            2),
+                                                    child: pw.Text('Signature',
+                                                        style:
+                                                            const pw.TextStyle(
+                                                                fontSize:
+                                                                    7))))),
                                       ]))),
                             ]))),
                   ]))
