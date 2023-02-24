@@ -932,7 +932,60 @@ class InvoicePdf extends StatelessWidget {
                             ]))),
                   ]))
             ])),
-            pw.Container(),
+            pw.Divider(height: 3, color: PdfColors.white),
+            pw.Container(
+                height: 90,
+                child: pw.Column(children: [
+                  pw.Expanded(
+                      flex: 1,
+                      child: pw.Container(
+                          alignment: pw.Alignment.topCenter,
+                          decoration: pw.BoxDecoration(
+                            border: pw.Border.all(width: 0.5),
+                          ),
+                          child: pw.Center(
+                              child: pw.Text('INVOICE WITH PACKING LIST',
+                                  style: const pw.TextStyle(fontSize: 7))))),
+                  pw.Expanded(
+                      flex: 1,
+                      child: pw.Container(
+                        alignment: pw.Alignment.topCenter,
+                        decoration: pw.BoxDecoration(
+                          border: pw.Border.all(width: 0.5),
+                        ),
+                      )),
+                  pw.Expanded(
+                      flex: 4,
+                      child: pw.Container(
+                        alignment: pw.Alignment.topCenter,
+                        decoration: pw.BoxDecoration(
+                          border: pw.Border.all(width: 0.5),
+                        ),
+                      )),
+                  pw.Expanded(
+                      flex: 2,
+                      child: pw.Container(
+                        alignment: pw.Alignment.topCenter,
+                        decoration: pw.BoxDecoration(
+                          border: pw.Border.all(width: 0.5),
+                        ),
+                      )),
+                  pw.Expanded(
+                      child: pw.Container(
+                    alignment: pw.Alignment.topCenter,
+                    decoration: pw.BoxDecoration(
+                      border: pw.Border.all(width: 0.5),
+                    ),
+                  )),
+                  pw.Expanded(
+                      flex: 1,
+                      child: pw.Container(
+                        alignment: pw.Alignment.topCenter,
+                        decoration: pw.BoxDecoration(
+                          border: pw.Border.all(width: 0.5),
+                        ),
+                      )),
+                ])),
             pw.Container()
           ]));
     }));
