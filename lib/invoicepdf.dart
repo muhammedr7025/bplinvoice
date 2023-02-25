@@ -932,7 +932,7 @@ class InvoicePdf extends StatelessWidget {
                             ]))),
                   ]))
             ])),
-            pw.Divider(height: 3, color: PdfColors.white),
+            pw.Divider(height: 5, color: PdfColors.white),
             pw.Container(
                 height: 90,
                 child: pw.Column(children: [
@@ -1292,6 +1292,7 @@ class InvoicePdf extends StatelessWidget {
                                 )),
                           ]))),
                 ])),
+            pw.Divider(height: 5, color: PdfColors.white),
             pw.Container(
                 child: pw.Column(children: [
               pw.Align(
@@ -1303,7 +1304,23 @@ class InvoicePdf extends StatelessWidget {
                   alignment: pw.Alignment.topLeft,
                   child: pw.Text('NOTE:',
                       style: pw.TextStyle(
-                          fontWeight: pw.FontWeight.bold, fontSize: 10)))
+                          fontWeight: pw.FontWeight.bold, fontSize: 10))),
+              pw.Divider(height: 5, color: PdfColors.white),
+              pw.Row(children: [
+                pw.Expanded(flex: 1, child: pw.Container()),
+                pw.Expanded(
+                    flex: 8,
+                    child: pw.Container(
+                        child: pw.Column(children: [
+                      pw.Align(
+                        alignment: pw.Alignment.topLeft,
+                        child: pw.Text(
+                            '1. I declare that above products for my family / Friend,Personal use,as Gift'),
+                      ),
+                      pw.Text(
+                          '2. Shipper certifies that the particulars on the face here of are correct and so far as any part of the consignment contains Dangerous Goods.If any such part is properly by name and is in proper condition for carriage by air according to the international Air Transport Associations applicable Dangerous goods regulations and Civil Aviation Regulations of K.S.A.')
+                    ])))
+              ])
             ]))
           ]));
     }));
